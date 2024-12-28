@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPACE EXPLORATION</title>
+        <link rel="stylesheet" href="project.css">
+    </head>
+    <body>
+        
+       <header>
+        <h1>SPACE EXPLORATION</h1>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#missions">Missions</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+       </header>
+       
+       <section id="home" class="hero">
+        <h2>Explore the Universe</h2>
+        <p>Join us on an amazing journey beyond our world</p>
+        <button onclick="scrollToSection('missions')">Learn More</button>
+       </section>
+
+       <section id="missions" class="missions">
+        <h2>Our Missions</h2>
+        <ul class="missions-list">
+            <li>
+                Apollo l1 - first human on the Moon
+                <a href="https://www.nasa.gov/mission_pages/apollo/missions/apollo11.html" target="_blank">Learn more</a>
+            </li>
+            <li>
+                Mars Rover Perseverance - Exploring the Red Planet
+               <a href="https://mars.nasa.gov/mars2020/" target="_blank">Learn more</a>
+           </li>
+           <li>
+                James Webb Telescope - Unlocking the secrets of the universe
+               <a href="https://webb.nasa.gov/" target="_blank">Learn more</a>
+           </li>
+           <li>
+                Voyager 1 - Pushing the boundaries of the Solar System
+               <a href="https://voyager.jpl.nasa.gov/" target="_blank">Learn more</a>
+           </li>
+        </ul>
+       </section>
+       <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="constellations-2609647_1280.jpg" alt="Galaxy">
+                <p class="caption">Galaxy</p>
+            </div>
+            <div class="gallery-item">
+                <img src="satellite-67718_1280.jpg" alt="Space">
+                <p class="caption">Space Exploration</p>
+            </div>
+            <div class="gallery-item">
+                <img src="earth-2113656_1280.jpg" alt="Planet">
+                <p class="caption">Planet</p>
+            </div>
+            <div class="gallery-item">
+                <img src="nasa-2313267_1280.jpg" alt="NASA">
+                <p class="caption">NASA</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="3" required></textarea>
+            <button type="submit"><i class="send"></i>Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p> 2024 Space Exploration. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.navbar a').forEach(link => 
+        {
+            link.addEventListener('click', function(e) 
+            {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+        function scrollToSection(sectionId) 
+        {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out to us! We will respond soon.');
+        });
+    </script>
+    </body>
+</html>
