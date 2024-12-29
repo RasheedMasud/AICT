@@ -1,0 +1,206 @@
+         body 
+        {
+           font-family: Arial;
+           margin: 0;
+           padding: 0;
+           color:whitesmoke;
+           background: url('StockCake-Spiral galaxy glowing_ 173449835.jpg') no-repeat center/cover;
+           background-color: rgb(3, 6, 35);
+        }
+        header 
+        {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 16px 32px;
+            text-align: center;
+        }
+        header h1 
+        {
+            margin: 0px;
+            font-size: 32px;
+        }
+        .navbar 
+        {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 16px;
+        }
+        .navbar li a 
+        {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        .navbar li a:hover 
+        {
+            color: rgb(116, 201, 255);
+        }
+        section 
+        {
+            padding: 64px 32px;
+            text-align: center;
+        }
+        .hero 
+        {
+            background: url('stockCake-Astronaut in space_1734498742.jpg') no-repeat center/cover;
+            background-color:black; 
+            color:whitesmoke;
+        }
+        .hero h2 
+        {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        .hero p 
+        {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+        .hero button 
+        {
+            padding: 11.2px 32px;
+            font-size: 16px;
+            background: rgb(92, 90, 173);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .hero button:hover 
+        {
+            background: rgb(116, 115, 216);
+        }
+        .missions 
+        {
+            background: rgba(0, 0, 0, 0.8);
+            color: rgb(221, 221, 221);
+        }
+        .missions-list 
+        {
+            list-style: none;
+            padding: 0px;
+            margin: 32px 0px;
+            gap: 24px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+        .missions-list li 
+        {
+            background: rgb(51, 51, 51);
+            padding: 24px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .missions-list li:hover 
+        {
+            transform: translateY(-5px);
+            background: rgb(86, 84, 162);
+        }
+        .missions-list a 
+        {
+            display: block;
+            margin-top: 16px;
+            color: rgb(116, 201, 255);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .missions-list a:hover 
+        {
+            text-decoration: underline;
+        }
+        .gallery 
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .gallery img 
+        {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover 
+        {
+            transform: scale(1.1);
+        }
+        .caption 
+        {
+            margin-top: 11px;
+            font-size: 16px;
+            color: rgb(204, 204, 204);
+            font-style: italic;
+        }
+        #contact 
+        {
+            padding: 32px 24px;
+            background: rgba(0, 0, 0, 0.8);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 8px;
+            margin: 32px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        #contact h2 
+        {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        form 
+        {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        form input, form textarea 
+        {
+            padding: 11.5px 16px;
+            border: 1px solid rgb(68, 68, 68);
+            border-radius: 5px;
+            background: rgb(34, 34, 34);
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+        form input:hover
+        {
+         transform: scale(1.05)
+
+        }
+        form textarea:hover
+        {
+         transform: scale(1.05)
+
+        }
+        form button 
+        {
+            padding: 11.2px 24px;
+            background-color: rgb(92, 90, 173);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover 
+        {
+            background-color: rgb(116, 115, 216);
+        }
+        footer 
+        {
+            text-align: center;
+            padding: 16px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
